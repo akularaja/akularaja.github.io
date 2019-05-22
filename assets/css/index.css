@@ -20,7 +20,7 @@ body {
       top: 50%;
       width: 16em;
       margin: 0 auto;
-      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      border-right: 2px solid orange;
       font-size: 180%;
       text-align: center;
       white-space: nowrap;
@@ -30,6 +30,7 @@ body {
 /*Animation*/
 
 .anim-typewriter {
+
       animation: typewriter 4s steps(40) 1s 1 normal both,
       blinkTextCursor 500ms steps(40) infinite normal;
 }
@@ -48,11 +49,12 @@ body {
       to {
             width: 18em;
       }
+      50% { border-color: orange; }
 }
 
 @keyframes blinkTextCursor {
       from {
-            border-right-color: rgba(255, 255, 255, 0.75);
+            border-right-color: orange;
       }
       to {
             border-right-color: transparent;
